@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/editView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom|right"
+            android:textSize="24sp" />
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:columnCount="8"
+            android:orientation="horizontal"
+            android:rowCount="9">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton"
+                android:text="(" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton"
+                android:text=")" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="square"
+                android:text="x^2" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="cube"
+                android:text="x^3" />
+            <Button
+                android:layout_width="174dp"
+                android:layout_columnSpan="2"
+                android:onClick="delete"
+                android:text="←" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:onClick="empty"
+                android:text="C" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="power"
+                android:text="x^y" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="factorial"
+                android:text="x!" />
+
+            <Button
+                android:onClick="squareRoot"
+                android:text="√" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="ln"
+                android:text="ln" />
+            <Button
+                android:onClick="clickButton"
+                android:text="+" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="1" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="2" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="3" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="log"
+                android:text="log" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="sin"
+                android:text="sin" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="cos"
+                android:text="cos" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="tan"
+                android:text="tan" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="-" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="4" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="5" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="6" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="pi"
+                android:text="π" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="reciprocal"
+                android:text="1/x" />
+
+            <Button
+                android:textAllCaps="false"
+                android:onClick="eulerNumber"
+                android:text="e" />
+
+            <Button
+                android:onClick="percentage"
+                android:text="%" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="×" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="7" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="8" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="9" />
+
+            <Button
+                android:layout_column="4"
+                android:onClick="clickButton"
+                android:text="/" />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="." />
+
+            <Button
+                android:onClick="clickButton"
+                android:text="0" />
+            <Button
+                android:onClick="equal"
+
+                android:text="=" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
