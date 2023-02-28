@@ -54,19 +54,19 @@
                 android:textAllCaps="false"
                 android:onClick="cube"
                 android:text="x^3" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_columnSpan="2"
+                android:onClick="empty"
+                android:text="C" />
+
             <Button
                 android:layout_width="174dp"
                 android:layout_columnSpan="2"
                 android:onClick="delete"
                 android:text="←" />
 
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="175dp"
-                android:layout_height="wrap_content"
-                android:layout_columnSpan="2"
-                android:onClick="empty"
-                android:text="C" />
 
             <Button
                 android:textAllCaps="false"
@@ -104,8 +104,8 @@
 
             <Button
                 android:textAllCaps="false"
-                android:onClick="log"
-                android:text="log" />
+                android:onClick="lg"
+                android:text="lg" />
 
             <Button
                 android:textAllCaps="false"

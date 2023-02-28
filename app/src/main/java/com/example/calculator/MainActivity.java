@@ -148,14 +148,14 @@ public class MainActivity extends AppCompatActivity {
         str.append("l");
     }
 
-    //log
-    public void log(View view){
-        editText.append("log");
+    //lg
+    public void lg(View view){
+        editText.append("lg");
         str.append("o");
     }
 
     private List<String> zhuanZhongZhui(String str) {
-        //把输入的字符串转换成中缀表达式。存入list中
+        //把输入的字符串转换为中缀表达式。存入list中
         int index = 0;
         List<String> list = new ArrayList<>();
         do{
@@ -180,7 +180,8 @@ public class MainActivity extends AppCompatActivity {
         return list;
     }
 
-    public List<String> zhuanHouZhui(List<String> list){//中缀表达式转换称后缀表达式
+    public List<String> zhuanHouZhui(List<String> list){
+        //中缀表达式转换为后缀表达式
         Stack<String> fuZhan = new Stack<>();
         List<String> list2 = new ArrayList<>();
         if (!list.isEmpty()) {
@@ -350,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (list2.get(i).equals("o")) {
                     double num1 = Double.parseDouble(stack.pop());
                     if (num1 > 0){
-                        res = Math.log(num1) / Math.log(2);
+                        res = Math.log10(num1);
                     } else {
                         editText.setText("对数函数的定义域大于0");
                         indexYN = 1;
@@ -399,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (str.length() > 1){
             for (i = 0; i < str.length() - 1; i++) {
-                //1.第一个字符只能为"losctg(0123456789ep"中的一个
+                //1.第一个字符只能为"losctg(0123456789e"中的一个
                 if ("losctg(0123456789ep".indexOf(str.charAt(0)) == -1){
                     text.setText("输入错误！");
                     indexYN = 1;
